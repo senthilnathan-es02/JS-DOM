@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+    button{
+        margin-top: 110px;
+    }
+</style>
+
+<div class="box">
+    <button onclick="change()">change</button>
+</div>
+
+<script>
+    var color=document.querySelector(".box");
+
+    function change(){
+        color.style.backgroundColor="red";
+    }
+</script>
+    
+</body>
+</html>

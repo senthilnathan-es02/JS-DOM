@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> Hello everyone</h2>
+    <div class="container">
+        <ul id="ul">
+            <li>one</li>
+            <li>two</li>
+            <li>three </li>
+        </ul>
+        <button id="button">Add</button>
+        <button id="remove">Remove</button>
+    </div>
+
+    <script>
+
+        const container=document.querySelector("container");
+
+        const button=document.getElementById("button");
+
+        const remove=document.getElementById("remove");
+
+        const ul=document.getElementById("ul");
+
+    
+
+button.addEventListener("click",()=>{
+const newli=document.createElement("li");
+newli.textContent="four";
+newli.classList.add("lists")
+ul.appendChild(newli);
+});
+
+
+remove.addEventListener("click", ()=>{
+const childToRemove = document.querySelector(".lists");
+childToRemove.remove()
+});
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+

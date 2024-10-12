@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+           <!-- Adding to a console -->
+            
+    <input id="adding" type="number">
+    <input id="adding1" type="number">
+    <button onclick="Add()">Add</button>
+
+    <script>
+
+        function Add(){
+            var input = parseFloat(document.getElementById("adding").value);
+            var input1=parseFloat( document.getElementById("adding1").value);
+            console.log(input+input1);
+
+        }
+
+    </script>
+    
+</body>
+</html>
